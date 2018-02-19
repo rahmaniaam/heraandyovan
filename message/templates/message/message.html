@@ -2,35 +2,42 @@
 
 {% block content %}
 
-<div class="form-web">
-	<form id="form" method="POST" action="{% url 'message:add_surat' %}">
-	<h2>Menulis sesuai keinginan</h2>
-	{% csrf_token %}
-	{{ surat_form }}
-	<input id="submit" type="submit" class="input-btn" value="Submit">
-	</form>	
+<h2>Tulislah sesuai keinginan hatimu</h2>
+
+<div class="contain-form">
+	<div class="form-web">
+		<form id="form" method="POST" action="{% url 'message:add_surat' %}">
+			{% csrf_token %}
+			{{ surat_form }}
+			<input id="submit" type="submit" class="input-btn" value="Submit">
+		</form>	
+	</div>
 </div>
+
 
 <div class="posts">
 	{% if surat %}
-		{% for post in surat reversed %}
-			<div class="contain-surat">
-				<div class="surat-dari">
-					Dari: {{post.dari}}
-				</div>
-				<div class="surat-untuk">
-					Untuk: {{post.untuk}}
-				</div>
-				<div class="surat-pesan">
-					{{post.pesan}}
-				</div>
-				<a href="/message/delete_surat/{{ post.id }}">
-					<div class="post-delete">
-						Hapus
+		<div class="contain-surat">
+			{% for post in surat reversed %}
+				<div class="surat-post">
+					<div class="surat-dari">
+						DARI: {{post.dari}}
 					</div>
-				</a>
-			</div>
-		{% endfor %}
+					<div class="surat-untuk">
+						UNTUK: {{post.untuk}}
+					</div>
+					<div class="surat-pesan">
+						{{post.pesan}}
+					</div>
+					<a href="/message/delete_surat/{{ post.id }}">
+						<div class="post-delete">
+							HAPUS
+						</div>
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+		
 	{% else %}
 		<div class="no-posts">
 			Wadaw! Kasihan tidak ada yang menulis:(

@@ -9,15 +9,23 @@
     <meta name="author" content="{{author}}">
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/message.css' %}" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
     <title>
         {% block title %} DUDU By {{author}} {% endblock %}
     </title>
 </head>
 
 <body>
-    {% block content %}
-    <!-- content goes here -->
-    {% endblock %}
+    <content>
+        {% block content %}
+        {% endblock %}
+    </content>
+    <footer>
+        {% block footer %}
+        {% include "message/partials/footer.html" %}
+        {% endblock %}
+    </footer>
 
     <script type="application/javascript">
       

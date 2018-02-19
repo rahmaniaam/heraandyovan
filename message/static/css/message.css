@@ -1,10 +1,131 @@
 body {
+	position: relative;
 	margin: 0;
 	padding: 0;
+	padding-bottom: 5rem;
+	background-color: #d79a98;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	font-family: 'Oswald', sans-serif;
 }
 
 footer {
-	position: relative;
+	position: absolute;
 	bottom: 0;
+	width: 100%;
 	text-align: center;
+	background-color: #0a3170;
+	font-size: 1.5rem;
+	line-height: 1rem;
+}
+
+a {
+	color: inherit;
+}
+
+h2 {
+	font-family: 'Pacifico', cursive;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.contain-form {
+	text-align: center;
+	width: 100%;
+} 
+
+.form-web {
+	margin: 5rem 0;
+}
+
+form {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+input {
+	max-width: 300px;
+	min-width: 30%;
+	height: 2rem;
+	margin: 0.3rem auto;
+}
+
+input[type=text] {
+	border-radius: 10px;
+	padding: 0 0.5rem;
+	font-size: 1rem;
+	border: none;
+}
+
+input[type=submit] {
+	border: none;
+	border-radius: 10px;
+	width: 100%;
+	font-size: 1rem;
+	padding: 0.5rem;
+	background-color: #0a3170;
+	color: #fff;
+}
+
+textarea {
+	border: none;
+	border-radius: 10px;
+	resize: none;
+	max-width: 300px;
+	min-width: 30%;
+	height: 4rem;
+	margin: 0.3rem auto;
+	padding: 0.5rem 0.5rem;
+	font-size: 1rem;
+}
+
+.posts {
+	height: 100%;
+	width: 100%;
+}
+
+.no-posts {
+	text-align: center;
+	font-size: 4rem;
+	font-weight: 900;
+	padding-bottom: 6rem;
+}
+
+.contain-surat {
+	display: flex;
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
+ 	justify-content: space-around;
+ 	align-items: flex-start;
+ 	align-content: flex-start;
+	padding: 2rem 0;
+	width: 100%;
+}
+
+.surat-post {
+	background-color: #ea9b09;
+	max-width: 15rem;
+	padding: 0.5rem;
+	margin: 0 1rem;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	flex-grow: 1;
+}
+
+.surat-dari, .surat-untuk, .surat-pesan, .post-delete {
+	margin: 1rem;
+}
+
+.post-delete {
+	text-decoration: none;
+	text-align: center;
+}
+
+.surat-pesan {
+	border: 1px solid #fff;
+	border-radius: 10px;
+	padding: 0.5rem;
 }
