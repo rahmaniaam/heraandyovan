@@ -128,4 +128,6 @@ textarea {
 	border: 1px solid #fff;
 	border-radius: 10px;
 	padding: 0.5rem;
+	background-color: #fff;
+	color: #64189b;
 }
