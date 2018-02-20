@@ -21,7 +21,6 @@ UnitTest:
   when: on_success
   script:
     - coverage run --include='lab_*/*' manage.py test
-    - coverage report -m
 
 Deployment:
   image: ruby:2.4
