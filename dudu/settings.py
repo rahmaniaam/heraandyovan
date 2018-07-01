@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #'message',
-    'reception',
-    'livereload'
+    'reception'
+    #'livereload'
 ]
 
 MIDDLEWARE = [
