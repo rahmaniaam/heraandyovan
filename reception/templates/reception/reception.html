@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load staticfiles %} {% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -8,11 +8,26 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400" rel="stylesheet">
     <link href="{% static 'css/reception.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slick/slick.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slick/slick-theme.css' %}" />
 </head>
 
 <body>
     <div class="landing">
-        <img class="lg-img" src="https://pre00.deviantart.net/b03f/th/pre/i/2010/059/1/0/wedding_12_by_kechake_stock.jpg" width="100%">
+        <div class="slideshow">
+            <div class="slide">
+                <img class="lg-img" src="https://pre00.deviantart.net/b03f/th/pre/i/2010/059/1/0/wedding_12_by_kechake_stock.jpg" width="100%">
+            </div>
+            <div class="slide">
+                <img class="lg-img" src="https://media.weddingz.in/images/46cb2a38d8bac7ee6fcba6fc2a2224f0/vintage-pre-wedding-photoshoot-in-mumbai-with-an-old-world-charm-vintage-pre-wedding-photoshoot-in-mumbai-with-an-old-world-charm-1.jpg"
+                    width="100%">
+            </div>
+            <div class="slide">
+                <img class="lg-img" src="http://rishabhphotostudio.com/wp-content/uploads/2017/09/rishabh-photo-1.jpg" width="100%">
+            </div>
+        </div>
+
         <p class="title">Hera & Yovan</p>
         <p id="demo"></p>
     </div>
@@ -21,6 +36,25 @@
         <fieldset>
             <legend class="story-title">The Story of Us</legend>
             <div class="story-text">
+                <div class="mugshot-container">
+                    <div class="bride">
+                        <div class="bride-photo crop">
+                            <img class="bride-img" src="http://www.adrianbonetphotography.net/blog/wp-content/uploads/2015/01/016-wedding-bride-portrait-profile.jpg">
+                        </div>
+                        <div class="bride-desc">
+                            The Bride
+                        </div>
+                    </div>
+                    <div class="groom">
+                        <div class="groom-photo crop">
+                            <img class="groom-img" src="https://d1zpvjny0s6omk.cloudfront.net/media/cache/e3/e3/e3e3eeda3296c031baf67d8073696ea8.jpg"
+                                width=100%>
+                        </div>
+                        <div class="groom-desc">
+                            The Groom
+                        </div>
+                    </div>
+                </div>
                 <p>Id illum impetus expetendis pri, melius admodum placerat ius cu. Ei eirmod oportere mei, mei nisl esse signiferumque
                     te. Rebum delenit vituperatoribus sit ex, pro commodo postulant te. His stet accusam gloriatur te, eu
                     putant tritani persecuti quo, his ex mucius reformidans. Semper hendrerit eos et, nec id choro ubique
@@ -51,7 +85,7 @@
     <div class="calendar">
         <p>
             Sunday, 22 July 2018
-            <br> Binakarna Auditorium, Bidakara Building
+            <br> Birawa Assembly Hall, Hotel Bidakara
         </p>
         <span>
             <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=Yzh0YzVudWVoZWM0dDdmbTVkYjRnaDVpczhfMjAxODA3MjJUMTIwMDAwWiByYWhtYW5pYWFtMjZAbQ&amp;tmsrc=rahmaniaam26%40gmail.com&amp;scp=ALL">
@@ -61,11 +95,37 @@
         </span>
     </div>
 
-    <div id="map"></div>
+    <div class="rsvp-container">
+        RSVP
+        <div class="rsvp-form">
+            <form id="form" method="POST" action="{% url 'reception:add_guest' %}">
+                {% csrf_token %} {{ guest_form }}
+                <input id="submit" type="submit" class="input-btn" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <p class="map-title">Don't get lost, we have technology.</p>
+        <div id="map"></div>
+    </div>
+
 </body>
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="{% static 'css/slick/slick.min.js' %}"></script>
 <script src="{% static 'js/countdown.js' %}"></script>
 <script src="{% static 'js/maps.js' %}"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.slideshow').slick({
+            dots: true,
+            autoplay: true
+        });
+    });
+</script>
+
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyK-gR_wVlDvmBa8_FpK5ylSJccxh3IKc&callback=initMap"></script>
 
 </html>
