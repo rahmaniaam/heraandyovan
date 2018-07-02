@@ -7,11 +7,10 @@ html, body {
 
 	font-family: 'Roboto Slab', serif;
 	font-weight: 100;
+	color: #aa8a59;
 }
 
 .body {
-	/* display: flex;
-	flex-direction: column; */
 	display: grid;
 	grid-template-columns: 100%;
 }
@@ -33,37 +32,48 @@ li {
 }
 
 .lg-img {
-	opacity: 0.5;
+	/* opacity: 0.5; */
 	position: relative;
+}
+
+.slide {
+	position: relative;
+}
+
+#third-photo {
+	position: absolute;
+	top: -10%;
+	transform: translateY(-10%);
 }
 
 .title {
 	position: absolute;
-	top: 40%;
+	top: 85%;
 	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	   -moz-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	     -o-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
-	font-size: 4rem;
+	-webkit-transform: translate(-50%, -85%);
+	   -moz-transform: translate(-50%, -85%);
+	    -ms-transform: translate(-50%, -85%);
+	     -o-transform: translate(-50%, -85%);
+			transform: translate(-50%, -85%);
+	font-family: 'scriptinaregular';
+	font-size: 3rem;
 }
 
 #demo {
-	width: 65%;
-	border: 5px solid black;
+	width: 30%;
+	border: 5px solid #aa8a59;
 	position: absolute;
-	top: 50%;
+	top: 90%;
 	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	   -moz-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	     -o-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -90%);
+	   -moz-transform: translate(-50%, -90%);
+	    -ms-transform: translate(-50%, -90%);
+	     -o-transform: translate(-50%, -90%);
+	        transform: translate(-50%, -90%);
 
-	font-size: 3rem;
+	font-size: 2rem;
 	text-align: center;
-	padding: 1.5rem;
+	padding: 1.5rem ;
 }
 
 .slick-slider {
@@ -93,18 +103,6 @@ fieldset {
 	font-size: 2rem;
 }
 
-.crop {
-	width: 500px;
-	height: 500px;
-	overflow: hidden;
-	margin: 0;
-}
-
-.crop img {
-	display: block;
-	position: relative;
-}
-
 /* third big div */
 .calendar {
 	display: grid;
@@ -128,7 +126,6 @@ fieldset {
 }
 
 form {
-	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -190,16 +187,16 @@ input[type=submit] {
 
 @media only screen and (min-width: 768px) {
 	.landing {
-		/* height: 100vh; */
+		height: 100vh;
 	}
 
 	.title {
-		font-size: 4rem;
+		font-size: 2.5rem;
 		padding-bottom: 6rem; 
 	}
 
 	#demo {
-		font-size: 3rem;
+		font-size: 1.5rem;
 	}
 
 	/* .calendar {
