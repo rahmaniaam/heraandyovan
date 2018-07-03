@@ -38,7 +38,8 @@ li {
 }
 
 #third-photo {
-    object-position: 50% 10%;
+    top: -10%;
+    transform: translateY(-10%);
 } 
 
 .slide {
