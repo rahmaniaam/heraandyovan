@@ -64,7 +64,7 @@ li {
 }
 
 #demo {
-	width: 30%;
+	width: auto;
 	border: 5px solid #aa8a59;
 	position: absolute;
 	top: 90%;

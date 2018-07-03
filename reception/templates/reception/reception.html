@@ -5,6 +5,7 @@
 <head>
     <title>Hera & Yovan</title>
     <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400" rel="stylesheet">
     <link href="{% static 'css/large.css' %}" rel="stylesheet">
@@ -39,11 +40,78 @@
 
             #third-photo {
                 width: 100vw;
-                object-position: 50% 0;
             }
 
             .slide {
                 overflow: hidden;
+            }
+
+        }
+
+        @media screen and (max-width: 414px) {
+            .lg-img {
+                height: 100vh;
+                width: auto;
+            }
+
+            #first-photo {
+                left: -18%;
+                transform: translateX(-18%);
+            }
+
+            #second-photo {
+                left: -25%;
+                transform: translateX(-25%);
+            }
+
+            #third-photo {
+                width: 100vw;
+            }
+
+            .title {
+                font-size: 1.5rem;
+            }
+
+            #demo {
+                width: 50%;
+                font-size: 0.9rem;
+            }
+
+            .story-title {
+                font-size: 1.5rem;
+            }
+
+            .story-text {
+                font-size: 1rem;
+                padding: 0.1rem;
+            }
+
+            .calendar {
+                font-size: 1rem;
+            }
+
+            .rsvp-container {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+
+            input[type=text],
+            input[type=email] {
+                font-size: 1rem;
+            }
+
+            .slide {
+                overflow: hidden;
+            }
+
+            .map-title {
+                font-size: 1rem;
+            }
+
+            #map {
+                height: 100vw;
+                width: 100vw;
+                margin: 0 auto;
             }
 
         }

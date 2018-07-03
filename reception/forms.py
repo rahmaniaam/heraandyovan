@@ -19,4 +19,4 @@ class Guest_Form(forms.Form):
     email = forms.EmailField(label='', required=True, max_length=50, widget=forms.TextInput(attrs=email_attrs))
     
     CHOICES = ((1, 'YES!',), (2, 'No :(',))
-    answer = forms.ChoiceField(required=True,widget=forms.RadioSelect, choices=CHOICES)
+    answer = forms.ChoiceField(label='Are you going?', required=True,widget=forms.RadioSelect, choices=CHOICES)
