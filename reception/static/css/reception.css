@@ -1,11 +1,12 @@
 
+
 html, body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	overflow-x: none;
 
-	font-family: 'Roboto Slab', serif;
+	/* font-family: 'Roboto Slab', serif; */
 	font-weight: 100;
 	color: #aa8a59;
 }
@@ -34,16 +35,33 @@ li {
 .lg-img {
 	/* opacity: 0.5; */
 	position: relative;
+	height: 100vh;
+	width: auto;
 }
 
 .slide {
 	position: relative;
+	height: 100%;
+	width: 100%;
+	
+}
+
+#first-photo {
+	position: absolute;
+	left: -18%;
+	transform: translateX(-18%);
+}
+
+#second-photo {
+	position: absolute;
+	left: -25%;
+	transform: translateX(-25%);
 }
 
 #third-photo {
 	position: absolute;
-	top: -10%;
-	transform: translateY(-10%);
+	left: -5%;
+	transform: translateX(-5%);
 }
 
 .title {
@@ -183,27 +201,4 @@ input[type=submit] {
 	height: 30rem;
 	width: 100%;
 	margin: 0 auto;
-}
-
-@media only screen and (min-width: 768px) {
-	.landing {
-		height: 100vh;
-	}
-
-	.title {
-		font-size: 2.5rem;
-		padding-bottom: 6rem; 
-	}
-
-	#demo {
-		font-size: 1.5rem;
-	}
-
-	/* .calendar {
-		height: 100vh;
-	} */
-
-	#map {
-		width: 50%;
-	}
 }
