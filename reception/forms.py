@@ -7,12 +7,12 @@ class Guest_Form(forms.Form):
     nama_attrs = {
         'type': 'text',
         'class': 'guest-form-input',
-        'placeholder':'Masukan nama anda'
+        'placeholder':'Nama'
     }
     email_attrs = {
         'type': 'email',
         'class': 'guest-form-input',
-        'placeholder':'Masukan email anda'
+        'placeholder':'Email'
     }
 
     nama = forms.CharField(label='', required=True, max_length=50, widget=forms.TextInput(attrs=nama_attrs))
