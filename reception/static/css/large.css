@@ -195,4 +195,9 @@ input[type=submit] {
 .ann-desc {
 	font-size: 2rem;
 	width: 50%;
+	margin: 0 auto;
+}
+
+.ann-desc p {
+	text-decoration: underline;
 }
