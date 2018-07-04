@@ -181,7 +181,7 @@ input[type=submit] {
 	text-align: center;
 } */
 
-.map-title, .ann-title {
+.map-title {
 	font-size: 3rem;
 	padding: 2rem 0;
 }
@@ -192,10 +192,14 @@ input[type=submit] {
 	margin: 1rem auto;
 }
 
+.ann-title {
+	font-size: 3rem;
+}
+
 .ann-desc {
 	font-size: 2rem;
 	width: 50%;
-	margin: 0 auto;
+	margin: 3rem auto;
 }
 
 .ann-desc p {
