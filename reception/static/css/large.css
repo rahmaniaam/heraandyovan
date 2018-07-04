@@ -194,5 +194,5 @@ input[type=submit] {
 
 .ann-desc {
 	font-size: 2rem;
-	min-width: 50%;
+	width: 50%;
 }
