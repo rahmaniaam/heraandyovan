@@ -24,30 +24,16 @@
             src: url("{% static 'fonts/Neou-Thin.ttf' %}") format('truetype');
         }
 
-        @media screen and (max-width: 1144px) {
+        /* @media screen and (max-width: 1366px) {
             .lg-img {
                 height: 100vh;
-                width: auto;
-            }
-
-            #first-photo {
-                object-position: 40% 0;
-            }
-
-            #second-photo {
-                object-position: 50% 0;
             }
 
             #third-photo {
-                width: 100vw;
                 top: 0%;
+                transform: unset !important;
             }
-
-            .slide {
-                overflow: hidden;
-            }
-
-        }
+        } */
 
         @media screen and (max-width: 414px) {
             .lg-img {
@@ -67,6 +53,7 @@
 
             #third-photo {
                 width: 100vw;
+                transform: none;
             }
 
             .title {

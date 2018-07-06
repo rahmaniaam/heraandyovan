@@ -38,8 +38,8 @@ li {
 }
 
 #third-photo {
-    top: -10%;
-    transform: translateY(-10%);
+    /* top: -10%;
+    transform: translateY(-10%); */
 } 
 
 .slide {
