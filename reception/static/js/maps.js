@@ -1,8 +1,8 @@
 function initMap() {
     const bidakara = {
-        lat: -6.241699,
-        lng: 106.841279
+        lat: -6.2401104,
+        lng: 106.8408638
     }
-    const map = new google.maps.Map(document.getElementById('map'), { zoom: 18, center: bidakara });
+    const map = new google.maps.Map(document.getElementById('map'), { zoom: 17, center: bidakara });
     const marker = new google.maps.Marker({ position: bidakara, map: map, animation: google.maps.Animation.BOUNCE });
 }
