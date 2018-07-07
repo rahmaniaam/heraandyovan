@@ -6,7 +6,7 @@ from .models import Guest
 # Create your views here.
 response = {}
 def index(request):
-    html = 'reception/reception.html'
+    html = 'reception/another.html'
     guest = Guest.objects.all()
     response['guest'] = guest
     response['guest_form'] = Guest_Form

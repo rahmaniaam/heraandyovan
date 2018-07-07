@@ -1,0 +1,244 @@
+{% load staticfiles %} {% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hera & Yovan</title>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400" rel="stylesheet">
+    <link href="{% static 'css/large.css' %}" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'scriptinaregular';
+            src: url("{% static 'fonts/scriptin-webfont.woff2' %}") format('woff2'),
+            url("{% static 'fonts/scriptin-webfont.woff' %}") format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'neou';
+            src: url("{% static 'fonts/Neou-Thin.ttf' %}") format('truetype');
+        }
+
+        /* @media screen and (max-width: 1366px) {
+            .lg-img {
+                height: 100vh;
+            }
+
+            #third-photo {
+                top: 0%;
+                transform: unset !important;
+            }
+        } */
+
+        @media screen and (max-width: 414px) {
+            .lg-img {
+                height: 100vh;
+                width: auto;
+            }
+
+            #first-photo {
+                left: -18%;
+                transform: translateX(-18%);
+            }
+
+            #second-photo {
+                left: -27%;
+                transform: translateX(-27%);
+            }
+
+            #third-photo {
+                width: 100vw;
+                transform: none;
+            }
+
+            .title {
+                font-size: 1.5rem;
+            }
+
+            #demo {
+                width: 50%;
+                font-size: 0.9rem;
+            }
+
+            .story-title {
+                font-size: 1.5rem;
+            }
+
+            .story-text {
+                font-size: 1rem;
+                padding: 0.1rem;
+            }
+
+            .calendar {
+                font-size: 1rem;
+            }
+
+            .rsvp-container {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+
+            input[type=text],
+            input[type=email] {
+                font-size: 1rem;
+            }
+
+            .slide {
+                overflow: hidden;
+            }
+
+            .map-title,
+            .ann-title {
+                font-size: 1rem;
+            }
+
+            .ann-desc {
+                font-size: 0.8rem
+            }
+
+            #map {
+                height: 100vw;
+                width: 100vw;
+                margin: 0 auto;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="landing">
+        <div class="slideshow">
+            <div class="slide fade">
+                <img id="first-photo" class="lg-img" src="{% static 'assets/_DSC5694.jpg' %}" width="100%">
+            </div>
+            <div class="slide fade">
+                <img id="second-photo" class="lg-img" src="{% static 'assets/_DSC5809.jpg' %}" width="100%">
+            </div>
+            <div class="slide fade">
+                <img id="third-photo" class="lg-img" src="{% static 'assets/_DSC6039.jpg' %}" width="100%">
+            </div>
+        </div>
+
+        <p class="title">Hera & Yovan</p>
+        <p id="demo" style="font-family: Roboto Slab;"></p>
+    </div>
+
+    <div class="story">
+        <fieldset>
+            <legend class="story-title" style="font-family: Roboto Slab;">The Story of Us</legend>
+            <div class="story-text" style="font-family: Roboto Slab;">
+                <!-- <div class="mugshot-container">
+                    <div class="bride">
+                        <div class="bride-photo crop">
+                            <img class="bride-img" src="http://www.adrianbonetphotography.net/blog/wp-content/uploads/2015/01/016-wedding-bride-portrait-profile.jpg">
+                        </div>
+                        <div class="bride-desc">
+                            The Bride
+                        </div>
+                    </div>
+                    <div class="groom">
+                        <div class="groom-photo crop">
+                            <img class="groom-img" src="https://d1zpvjny0s6omk.cloudfront.net/media/cache/e3/e3/e3e3eeda3296c031baf67d8073696ea8.jpg"
+                                width=100%>
+                        </div>
+                        <div class="groom-desc">
+                            The Groom
+                        </div>
+                    </div>
+                </div> -->
+                <p>Id illum impetus expetendis pri, melius admodum placerat ius cu. Ei eirmod oportere mei, mei nisl esse signiferumque
+                    te. Rebum delenit vituperatoribus sit ex, pro commodo postulant te. His stet accusam gloriatur te, eu
+                    putant tritani persecuti quo, his ex mucius reformidans. Semper hendrerit eos et, nec id choro ubique
+                    voluptatibus.
+                </p>
+                <p>
+                    Quo et magna porro, dicat alterum cotidieque ut eos. Nam magna suscipit perfecto ne, an sale dicam impedit vis. Habeo libris
+                    efficiendi ei vis. At nibh nominati nam. Vide legendos consetetur his ea.
+                </p>
+                <p>Id illum impetus expetendis pri, melius admodum placerat ius cu. Ei eirmod oportere mei, mei nisl esse signiferumque
+                    te. Rebum delenit vituperatoribus sit ex, pro commodo postulant te. His stet accusam gloriatur te, eu
+                    putant tritani persecuti quo, his ex mucius reformidans. Semper hendrerit eos et, nec id choro ubique
+                    voluptatibus.
+                </p>
+                <p>
+                    Quo et magna porro, dicat alterum cotidieque ut eos. Nam magna suscipit perfecto ne, an sale dicam impedit vis. Habeo libris
+                    efficiendi ei vis. At nibh nominati nam. Vide legendos consetetur his ea.
+                </p>
+                <p>Id illum impetus expetendis pri, melius admodum placerat ius cu. Ei eirmod oportere mei, mei nisl esse signiferumque
+                    te. Rebum delenit vituperatoribus sit ex, pro commodo postulant te. His stet accusam gloriatur te, eu
+                    putant tritani persecuti quo, his ex mucius reformidans. Semper hendrerit eos et, nec id choro ubique
+                    voluptatibus.
+                </p>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="calendar" style="font-family: neou;">
+        <p>
+            Sunday, 22 July 2018
+            <br> Birawa Assembly Hall, Hotel Bidakara
+        </p>
+        <span>
+            <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=Yzh0YzVudWVoZWM0dDdmbTVkYjRnaDVpczhfMjAxODA3MjJUMTIwMDAwWiByYWhtYW5pYWFtMjZAbQ&amp;tmsrc=rahmaniaam26%40gmail.com&amp;scp=ALL">
+                Add
+            </a>
+            the wedding to your google calendar!
+        </span>
+    </div>
+
+    <div class="rsvp-container" style="font-family: Roboto Slab;">
+        RSVP
+        <div class="rsvp-form">
+            <form id="form" method="POST" action="{% url 'reception:add_guest' %}">
+                {% csrf_token %} {{ guest_form }}
+                <input id="submit" type="submit" class="input-btn" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div class="map-container" style="font-family: Roboto Slab;">
+        <p class="map-title">Don't get lost, we have technology.</p>
+        <div id="map"></div>
+
+        <p class="ann-title">Important announcement!</p>
+        <p class="ann-desc">
+            Please be informed that there will be an expansion of the "Ganjil-Genap" area. Please study
+            <b>
+                <a href="{% static 'file/ganjil-genap.pdf' %}">this</a>
+            </b> to find an alternative to get to the wedding place.
+        </p>
+
+    </div>
+
+</body>
+
+<script src="{% static 'js/countdown.js' %}"></script>
+<script src="{% static 'js/maps.js' %}"></script>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyK-gR_wVlDvmBa8_FpK5ylSJccxh3IKc&callback=initMap"></script>
+
+</html>
