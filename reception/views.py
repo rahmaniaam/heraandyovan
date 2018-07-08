@@ -17,8 +17,8 @@ def add_guest(request):
     if(request.method == 'POST' and form.is_valid()):
         response['nama'] = request.POST['nama']
         response['email'] = request.POST['email']
-        
-        if request.POST['answer'] == 1:
+        print(request.POST['answer'])
+        if request.POST['answer'] == '1':
             response['answer'] = 'YES'
         else:
             response['answer'] = 'NO'
