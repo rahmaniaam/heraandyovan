@@ -65,6 +65,32 @@
                 font-size: 0.9rem;
             }
 
+            .mugshot-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .crop {
+                margin: 2rem 3rem 0rem 3rem;
+            }
+
+            .bride-desc,
+            .groom-desc,
+            .name {
+                position: relative;
+                top: -10%;
+                transform: translateY(-10%);
+            }
+
+            .name {
+                position: relative;
+                top: -100%;
+                transform: translateY(-200%);
+
+                margin: 1rem;
+                font-size: 1.2rem;
+            }
+
             .story-title {
                 font-size: 1.5rem;
             }
@@ -74,14 +100,24 @@
                 padding: 0.1rem;
             }
 
+            .message-title {
+                font-size: 2rem;
+            }
+
+            .message-desc {
+                font-size: 1.5rem;
+                padding-bottom: 4rem;
+            }
+
             .calendar {
                 min-height: 50vh;
-                font-size: 1rem;
+                font-size: 1.7rem;
             }
 
             .rsvp-container {
                 font-size: 1rem;
                 padding: 1rem;
+                height: 100vh;
             }
 
             input[type=text],
@@ -135,31 +171,33 @@
         <p id="demo" style="font-family: Roboto Slab;"></p>
     </div>
 
-    <div class="story">
-        <div class="mugshot-container">
-            <div class="bride">
-                <div class="bride-container crop">
-                    <img class="bride-img" src="{% static 'assets/_DSC5936.jpg' %}" width=100%>
-                </div>
-                <div class="bride-desc">
-                    The Bride
-                </div>
-                <div class="name" style="font-family: 'neou';">
-                    Hera
-                </div>
+    <div class="mugshot-container">
+        <div class="bride">
+            <div class="bride-container crop">
+                <img class="bride-img" src="{% static 'assets/_DSC5936.jpg' %}" width=100%>
             </div>
-            <div class="groom">
-                <div class="groom-container crop">
-                    <img class="groom-img" src="{% static 'assets/_DSC5941.jpg' %}" width=100%>
-                </div>
-                <div class="groom-desc">
-                    The Groom
-                </div>
-                <div class="name" style="font-family: 'neou';">
-                    Yovan
-                </div>
+            <div class="bride-desc">
+                The Bride
+            </div>
+            <div class="name" style="font-family: 'neou';">
+                Rezania Khairani Mochtar
             </div>
         </div>
+        <div class="groom">
+            <div class="groom-container crop">
+                <img class="groom-img" src="{% static 'assets/_DSC5941.jpg' %}" width=100%>
+            </div>
+            <div class="groom-desc">
+                The Groom
+            </div>
+            <div class="name" style="font-family: 'neou';">
+                Yovan Hadiatma Malikul Mulki
+            </div>
+        </div>
+    </div>
+
+    <div class="story">
+
         <fieldset>
             <legend class="story-title" style="font-family: Roboto Slab;">The Story of Us</legend>
             <div class="story-text" style="font-family: Roboto Slab;">
@@ -192,7 +230,8 @@
             <br>
             <br> Reception
             <br> 19.00 - 22.00
-            <br> Birawa Assembly Hall, Hotel Bidakara
+            <br> Birawa Assembly Hall,
+            <br> Hotel Bidakara
         </p>
         <br>
         <span>
@@ -224,7 +263,7 @@
         <p class="ann-title">Important announcement!</p>
         <br>
         <p class="ann-desc">
-            Please be informed that there will be an expansion of the "Ganjil-Genap" area. Kindly study
+            Please be informed that there will be an expansion of "Ganjil-Genap" area. Kindly study
             <b>
                 <a href="{% static 'file/ganjil-genap.pdf' %}">this</a>
             </b> to find an alternative to get to the venue.
