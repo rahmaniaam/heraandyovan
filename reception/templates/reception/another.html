@@ -136,57 +136,54 @@
     </div>
 
     <div class="story">
+        <div class="mugshot-container">
+            <div class="bride">
+                <div class="bride-container crop">
+                    <img class="bride-img" src="{% static 'assets/_DSC5936.jpg' %}" width=100%>
+                </div>
+                <div class="bride-desc">
+                    The Bride
+                </div>
+                <div class="name" style="font-family: 'neou';">
+                    Hera
+                </div>
+            </div>
+            <div class="groom">
+                <div class="groom-container crop">
+                    <img class="groom-img" src="{% static 'assets/_DSC5941.jpg' %}" width=100%>
+                </div>
+                <div class="groom-desc">
+                    The Groom
+                </div>
+                <div class="name" style="font-family: 'neou';">
+                    Yovan
+                </div>
+            </div>
+        </div>
         <fieldset>
             <legend class="story-title" style="font-family: Roboto Slab;">The Story of Us</legend>
             <div class="story-text" style="font-family: Roboto Slab;">
-                <!-- <div class="mugshot-container">
-                    <div class="bride">
-                        <div class="bride-photo crop">
-                            <img class="bride-img" src="http://www.adrianbonetphotography.net/blog/wp-content/uploads/2015/01/016-wedding-bride-portrait-profile.jpg">
-                        </div>
-                        <div class="bride-desc">
-                            The Bride
-                        </div>
-                    </div>
-                    <div class="groom">
-                        <div class="groom-photo crop">
-                            <img class="groom-img" src="https://d1zpvjny0s6omk.cloudfront.net/media/cache/e3/e3/e3e3eeda3296c031baf67d8073696ea8.jpg"
-                                width=100%>
-                        </div>
-                        <div class="groom-desc">
-                            The Groom
-                        </div>
-                    </div>
-                </div> -->
-                <p>Id illum impetus expetendis pri, melius admodum placerat ius cu. Ei eirmod oportere mei, mei nisl esse signiferumque
-                    te. Rebum delenit vituperatoribus sit ex, pro commodo postulant te. His stet accusam gloriatur te, eu
-                    putant tritani persecuti quo, his ex mucius reformidans. Semper hendrerit eos et, nec id choro ubique
-                    voluptatibus.
+                <p>We never remember our first meeting. Since it was years ago, and we didn’t even care. So it wasn’t love at
+                    first sight. Nor was it any other fairytale stories. But God’s fate has brought us together and it was
+                    more than magical!
                 </p>
                 <p>
-                    Quo et magna porro, dicat alterum cotidieque ut eos. Nam magna suscipit perfecto ne, an sale dicam impedit vis. Habeo libris
-                    efficiendi ei vis. At nibh nominati nam. Vide legendos consetetur his ea.
+                    Our grand families come from the same root, the infamous Kotogadang, West Sumatra. So our families knew one another. We even
+                    have mutual relatives. The funny thing is, we only started to recognize each other back in 2013.
                 </p>
-                <p>Id illum impetus expetendis pri, melius admodum placerat ius cu. Ei eirmod oportere mei, mei nisl esse signiferumque
-                    te. Rebum delenit vituperatoribus sit ex, pro commodo postulant te. His stet accusam gloriatur te, eu
-                    putant tritani persecuti quo, his ex mucius reformidans. Semper hendrerit eos et, nec id choro ubique
-                    voluptatibus.
-                </p>
-                <p>
-                    Quo et magna porro, dicat alterum cotidieque ut eos. Nam magna suscipit perfecto ne, an sale dicam impedit vis. Habeo libris
-                    efficiendi ei vis. At nibh nominati nam. Vide legendos consetetur his ea.
-                </p>
-                <p>Id illum impetus expetendis pri, melius admodum placerat ius cu. Ei eirmod oportere mei, mei nisl esse signiferumque
-                    te. Rebum delenit vituperatoribus sit ex, pro commodo postulant te. His stet accusam gloriatur te, eu
-                    putant tritani persecuti quo, his ex mucius reformidans. Semper hendrerit eos et, nec id choro ubique
-                    voluptatibus.
+                <p>After almost 5 years of relationship, partially long distance, we decided to bring it to the next level.
+                    And now here we are, just a few days before our wedding day.
                 </p>
             </div>
         </fieldset>
     </div>
 
-    <div class="message-container">
-
+    <div class="message-container" style="font-family: Roboto Slab;">
+        <p class="message-title">Dear Friends &amp; Families,</p>
+        <br>
+        <p class="message-desc">Our big day is getting closer. Without your presence, our happiness won’t be complete. Please be delighted to join
+            the celebration. We’ll see you there!</p>
+        <p class="message-name" style="font-family: scriptinaregular;">Hera &amp; Yovan</p>
     </div>
 
     <div class="calendar" style="font-family: neou;">
@@ -207,7 +204,7 @@
     </div>
 
     <div class="rsvp-container" style="font-family: Roboto Slab;">
-        RSVP
+        Kindly confirm your presence
         <div class="rsvp-form">
             <form id="form" method="POST" action="{% url 'reception:add_guest' %}">
                 {% csrf_token %} {{ guest_form }}
@@ -227,10 +224,10 @@
         <p class="ann-title">Important announcement!</p>
         <br>
         <p class="ann-desc">
-            Please be informed that there will be an expansion of the "Ganjil-Genap" area. Please study
+            Please be informed that there will be an expansion of the "Ganjil-Genap" area. Kindly study
             <b>
                 <a href="{% static 'file/ganjil-genap.pdf' %}">this</a>
-            </b> to find an alternative to get to the wedding place.
+            </b> to find an alternative to get to the venue.
         </p>
 
     </div>

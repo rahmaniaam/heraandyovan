@@ -7,7 +7,7 @@ class Guest_Form(forms.Form):
     nama_attrs = {
         'type': 'text',
         'class': 'guest-form-input',
-        'placeholder':'Nama'
+        'placeholder':'Name'
     }
     email_attrs = {
         'type': 'email',
@@ -18,5 +18,5 @@ class Guest_Form(forms.Form):
     nama = forms.CharField(label='', required=True, max_length=50, widget=forms.TextInput(attrs=nama_attrs))
     email = forms.EmailField(label='', required=True, max_length=50, widget=forms.TextInput(attrs=email_attrs))
     
-    CHOICES = ((1, 'YES!',), (2, 'No :(',))
-    answer = forms.ChoiceField(label='Are you going?', required=True,widget=forms.RadioSelect, choices=CHOICES)
+    CHOICES = ((1, 'Will definitely be there!',), (2, 'Sorry, I can\'t make it',))
+    answer = forms.ChoiceField(label='', required=True,widget=forms.RadioSelect, choices=CHOICES)

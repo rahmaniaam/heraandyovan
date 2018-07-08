@@ -107,7 +107,35 @@ li {
 .story {
 	position: relative;
 	color: #ad974f;
-} 
+}
+
+.mugshot-container {
+	display: flex;
+	justify-content: center;
+	margin: 2rem 0 4rem 0;
+}
+
+.bride, .groom {
+	text-align: center;
+}
+
+.crop {
+	margin: 2rem 3rem 0.5rem 3rem;
+}
+
+.bride-img, .groom-img {
+	width: 40vh;
+	padding: 1rem;
+	border: 5px solid #aa8a59;
+}
+
+.bride-desc, .groom-desc {
+	font-size: 4rem;
+}
+
+.name {
+	font-size: 3rem;
+}
 
 fieldset {
 	min-height: 100vh;
@@ -124,6 +152,21 @@ fieldset {
 .story-text {
 	padding: 2rem;
 	font-size: 2rem;
+}
+
+/* div */
+.message-container {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+
+	color: #8e793e;
+	text-align: center;
+	height: 100vh;
+}
+
+.message-name {
+	font-size: 2.5rem;
 }
 
 /* third big div */
@@ -180,6 +223,8 @@ input[type=submit] {
 	border-radius: 10px;
 	width: 100%;
 	font-size: 1.5rem;
+	font-family: 'Roboto Slab';
+	font-weight: 200;
 	padding: 0.7rem;
 	background-color: #8e793e;
 	color: #fff;
@@ -206,12 +251,12 @@ input[type=submit] {
 	margin: 1rem auto;
 }
 
-.ann-title {
+.ann-title, .message-title {
 	font-size: 3rem;
 	margin: 0 auto;
 }
 
-.ann-desc {
+.ann-desc, .message-desc {
 	font-size: 2rem;
 	width: 70%;
 	padding: 3rem auto;
